@@ -14,6 +14,7 @@ $blue1 : #42b9d0;
 $blue2 : #339fd1;
 $gray_blue : #eaf2f4;
 
+
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box; }
@@ -22,7 +23,7 @@ header{
 
   background: $gray_blue;
 
-  header #header_in{
+  #header_in{
     padding-top: 10px;
     padding-bottom:4px;
   }
@@ -43,7 +44,7 @@ header{
     background-image: url("../images/top/cover@2x.jpg");
 
   }
-  @media (min-width: 551px) {
+  @media (min-width: 550px) {
 
     text-align: left;
     height:420px;
@@ -60,7 +61,7 @@ header{
 
   padding-top:20px;
 
-  @media (min-width: 551px) {
+  @media (min-width: 550px) {
     padding-top: 30px;
   }
   // min-width: 551px
@@ -82,7 +83,7 @@ header{
       margin-top: 10px;
     }
 
-    @media (min-width: 551px) {
+    @media (min-width: 550px) {
 
       .service_title{
         @include fontsize(16);
@@ -110,7 +111,7 @@ header{
 
   background-color:$gray_blue;
 
-  @media (min-width: 551px) {
+  @media (min-width: 550px) {
 
     .container{
 
@@ -148,7 +149,7 @@ header{
   }
   // .news_lists
 
-  @media (min-width: 551px) {
+  @media (min-width: 550px) {
 
     .news_title{
       @include fontsize(22);
@@ -218,15 +219,20 @@ header{
     }
   }
   
-    @media (min-width: 551px) {
+    @media (min-width: 550px) {
 
     .sp_navi{
       display: none;
     }
 
-    #header_in{
+header #header_in{
       padding: 15px 0 10px 0;
     }
+
+header #header_in {
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
 
     .pc_navi_li{
       margin:0;
@@ -493,6 +499,17 @@ h1{
     margin-bottom: 0px;
 }
 
+#contents #main th, #contents #main td {
+    padding: 20px 0;
+    color: #626262;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+#contents #main th {
+    padding-right: 20px;
+}
+
 #contents #main .news_li {
     font-size: 15px;
     font-size: 1.5rem;
@@ -531,6 +548,12 @@ h1{
     background-image: url(../images/news/side_arrow.png);
     background-size: 4px 8px;
 }
+
+#contents #sidebar .pc_sidemenu li a {
+    color: #339fd1;
+    text-decoration: none;
+}
+
 #contents #sidebar .pc_sidemenu {
             display: none;
 }
